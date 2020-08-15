@@ -1,0 +1,42 @@
+MOV BX,1234H   ;BX  -1234H
+MOV AX,BX      ;DATA TRANSFER FROM BX TO AX: 1234H
+MOV AX,[0054H] ;0054H: 56H, AX:56H
+SINCE HERE everyy instruction of a program has to operate on data.
+the different ways in which a source oerand is denoted in an instruction are knoe=wn as addressing modes.
+with resepective to data types the operant changes.
+we have two types:- sequencial flow and control transfer instruction(jump/call)..
+
+TYPES OF ADDRESING MODE:
+A.regiter addressing
+B.immediate addressing               group 1:addressing modes for register and immediate data
+C.direct addressing
+D.register indirect addressing
+E,based addressing
+F.indexed addressing                group2: addressing modes for memory data
+G.based index addressing
+H.string addressing
+I.direct I/O port addressing          group3: addressing modes for i/o ports
+J.indirect i/o port addressing
+K.relative addressing                 group4: relative addressing mode
+L.implied addressing..                 group5: implied addressing mode
+
+B.IN immediate addressing mode ,an 8-buit or 16 bit data is specified as part of the instruction.
+   
+8086 microposser:it is a 40 pin ic and conist only processing unit.
+PIN AND SIGNALS:::
+totoal pin divided into 3 types.
+1 .common functions(signals)
+2. mimimum mode signals [PROCESSER OPERATE IN SINGLE MODE THAT IS MIMIMUM MODE OF OPERATTION]
+3.maximum mode signals.  [MULTI PROCESSOR MODE]
+except[24-31]remaing are belog to common signals.
+AD0-AD12 are adress and data bus.[they bhoth are time multiplear signal].
+while performing it ascess first adress and than data ..(in first clock pluse)
+A16/S3,A17/S4,A18/S5,A19/S6:-higher order adress bus. these are multiplexed with status signal(HERE  THESE PINS ARE ONLY USED FOR ADRESS BUS AS DATA BUS BIT IS 16]
+here {s} is status signal.
+at particular instant of time it acess adresss bus(where at that time data is low).
+
+pin 33:-MN/MX{MINI /MAX}: pROCESSER OPERATE IN SINGLE MODE THAT IS MIMIMUM MODE OF OPERATTION.
+
+
+
+

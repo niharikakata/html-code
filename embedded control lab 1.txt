@@ -1,0 +1,54 @@
+ADDITION/SUBRACTION/MULTIPLICATION/DIVISION
+
+ORG 200H  
+{r1 dw 01h dup(0)
+r2 dw 01h dup(0)
+r3 dw 02h dup(0)
+r4 dw 02h dup(0)
+
+MOV AX,1234H   ;AX = 1234H
+MOV BX,5678H   ;BX = 5678H
+ADD AX,BX      ;AX = AX+BX      
+LEA DI,R1                                       lea-load effective address
+MOV[DI],AX 
+
+ADDITION AX = 68AC
+200H: AC
+201H: 68
+}  it is a addition result..........................
+
+MOV AX,1234H     ;AX = 1234H
+MOV BX,5678H    ;BX = 5678H
+SUB AX,BX           ;AX = AX+BX      
+LEA DI,R2                                     
+MOV[DI],AX 
+SUBTRACTION RESULT: BBBCH                 { WE HAVE WRITE RESULT AFTER THE RUNNING OF PROGRAM IN 8086EMU}
+202H: BC
+203H: BBH
+
+
+MOV AX,1234H     ;AX = 1234H
+MOV BX,5678H    ;BX = 5678H
+MUL BX                ;AX = AX+BX      
+LEA DI,R3                                  
+MOV[DI],AX
+INC DI
+INC DI
+MOV [DI],DX
+
+MULTILICTAION RESULT : DX-0626 AX-0060
+
+MOV AX,1234H     ;AX = 1234H
+MOV BX,5678H    ;BX = 5678H
+DIV  BX                ;AX = AX+BX      
+LEA DI,R3                                  
+MOV[DI],AX
+INC DI
+INC DI
+MOV [DI],DX
+RET
+
+
+WE HAVE WRITE FULL OBSERVATION IN A FORMAT AS THE TEACHER GIVES US .
+BE PREPARED THE EXPERIMENT AND KNOW THE OUTPUT BY OBSERVING THE RUN ........
+
